@@ -1,0 +1,26 @@
+Package: bc-multiarch-travis
+Version: 1.0
+Maintainer: DBIC Devel <dbix-class-devel@lists.scsys.co.uk>
+
+# Versioned dependency to pull in the real bc package
+# and to prevent it from installing on the proper
+# multiarched version on Ubuntu Trusty
+Depends: bc (>= 1.06)
+Conflicts: bc (>= 1.06.95.8)
+Provides: bc
+Architecture: all
+Multi-Arch: foreign
+
+Source: bc
+
+Description: Dummy multiarch bc dependency package
+ This package provides a dummy multi-arch bc and depends on the real
+ one, so packages from other architectures that require bc can be
+ installed even though the real bc isn't Multi-Arch: foreign.
+ .
+ It can be safely removed once a bc with Multi-Arch: foreign is
+ installed.
+
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
