@@ -1,0 +1,15 @@
+#!/bin/bash
+
+chunks_holder=".reassemble"
+
+reassembler() {
+  for c in "$1/"*.00.chunk ; do
+    chunk_base="$(echo $c | sed 's/\.00\.chunk//')"
+    target_fn="$(echo "$chunk_base" | sed "s!$chunks_holder!.!")"
+    cat "$chunk_base"* > "$target_fn"
+  done
+}
+export -f reassembler
+export chunks_holder
+
+find "$(dirname "${BASH_SOURCE[0]}")" -type d -name "$chunks_holder" -exec bash -c "reassembler {}" \;
