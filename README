@@ -104,3 +104,27 @@ IT IS THE USER'S RESPONSIBILITY TO READ AND AGREE TO THE APPROPRIATE LICENSES
     8c45fc82ea34fb6b7ad17088ae75142264941df1  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/SDK_README
     15e4bcf5116aa3a00ea72fa9a67c0ddf7cd196a9  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/ott
     4c5365526d931062b2716c70bb557568d4ef31c0  ora_instaclient/x86-64/oracle_instaclient_10.2.0.5.0/rdbms/ottclasses.zip
+
+
+##### Branch DB2_ExC/9.7.5_deb_x86-64
+
+  ### apt_cache/*
+
+    apt_cache/ contains verbatim copies of the DB2 Express-C 9.7.5 x86-64 debs
+    found at https://launchpad.net/ubuntu/precise/amd64/db2exc/9.7.5-0lucid0
+    as of 2016-05-18
+
+    Not governed by a specific license as far as can be seen.
+
+    The contents sha1 checksums:
+
+    85ee534605df7e41784cc46f18c8bf277d42031f  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.00.chunk
+    a994412109ebd6cd296d0baa1e151f1beb0b7c65  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.01.chunk
+    fcd47dba58435905d67078eab68222062c307f13  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.02.chunk
+    4789be5f0f28bab670dc2583ad9832f7995ba247  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.03.chunk
+    56be9451f6671d1a0c63e11ecc1e0f31fdd938a9  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.04.chunk
+    181fc05f53aff6fcac297811bc4af0db71d210b1  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.05.chunk
+    2990f369d863ccb8fbc616dbd85733a771a7362f  apt_cache/.reassemble/db2exc_9.7.5-0lucid0_amd64.deb.06.chunk
+
+    # result of executing the reassembly script:
+    80378718048236eafb55413b0c933cf4a53e3370  apt_cache/db2exc_9.7.5-0lucid0_amd64.deb
